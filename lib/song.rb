@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class Song 
   attr_accessor :name, :artist_name
   @@all = []
@@ -67,26 +66,6 @@ def self.create_from_filename(file_name)
     def self.destroy_all 
       @@all.clear
     end 
+    binding.pry
     
 end 
-
-class Song
-  attr_accessor :name, :artist_name
-  @@all = []
-  @@create 
-  @@new_by_name
-  def self.all
-    @@all
-  end
-  
-  def save
-    self.class.all << self
-  end
-  
-    def self.create
-      song = Song.new
-      song.save
-      song
-    end
- end
->>>>>>> 5e09023041e2e0da8e699066f1df8c9f85478d49
